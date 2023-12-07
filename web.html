@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Info-Bot</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img class="icon" src="Images/Rise1.png" alt="" srcset="" width="120" height="100">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="http://127.0.0.1:5500/demo.html">INFOBOT</a></li>
+                    <li><a href="">TELEBOT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <button class="btn">Search</button>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Department of<br><span>Information Science</span><br>& Engineering</h1>
+            <p class="par">The Department of Information Science and Engineering was established in the year 1999 with an initial intake of 30 students. With the growth in demand from the student fraternity, the intake has been enhanced to a strength of 120. Our vision is to be a global premier center of education and research in Information Science and Engineering.</p>
+            <button class="cn"><a href="https://www.becbgk.edu/ISE/ISE_Home.php?id=0OgQR5">More</a></button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const chatbot = document.querySelector('df-messenger');
+          chatbot.addEventListener('df-messenger-loaded', function () {
+            chatbot.open();
+          });
+        });
+    </script> -->
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Info_bot"
+        agent-id="38fe2517-bfa0-41e1-a4ed-dfbb71bf7ce2"
+        language-code="en"
+    ></df-messenger>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
